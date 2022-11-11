@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Jns+G81nVpEc6aOSDQ/5n8nZePzofAcNBU0FIWoiH9DunBgZBkmXelOEfZ2JTqcwB0dq881gUIKMpjOcVbqvGQ==",
+  "dgSpecHash": "bS27eTI1RyewqYYwhaHQ3RZn0tweAy9NR47khVE/nHj5VuATKJ1UfzSLMSnp+O8kc/0+DiKE19RKwKxdG/LddA==",
   "success": true,
   "projectFilePath": "C:\\Users\\balib\\source\\repos\\Library\\Library.Model\\Library.Model.csproj",
   "expectedPackageFiles": [
@@ -60,6 +60,7 @@
     "C:\\Users\\balib\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\balib\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\balib\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
+    "C:\\Users\\balib\\.nuget\\packages\\system.linq.dynamic.core\\1.2.22\\system.linq.dynamic.core.1.2.22.nupkg.sha512",
     "C:\\Users\\balib\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\balib\\.nuget\\packages\\system.net.http\\4.3.0\\system.net.http.4.3.0.nupkg.sha512",
     "C:\\Users\\balib\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",

@@ -1,14 +1,14 @@
 ﻿using System.Linq.Expressions;
 using Core.Dynamic;
 using Core.Paging;
-using Library.Model.BaseEntity;
+using Library.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
 
 namespace Core.Repositories;
 
 public class EfRepositoryBase<TEntity, TContext> : IAsyncRepository<TEntity>, IRepository<TEntity>
-    where TEntity : IEntity
+    where TEntity : Entity
     where TContext : DbContext
 {
     protected TContext Context { get; }

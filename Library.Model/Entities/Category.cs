@@ -1,8 +1,8 @@
-﻿using Library.Model.BaseEntity;
+﻿using Library.Core.Entities;
 
 namespace Library.Model.Entities
 {
-    public class Category:IEntity
+    public class Category : Entity
     {
         public string Name { get; set; }
         public virtual ICollection<Book> Books { get; set; }

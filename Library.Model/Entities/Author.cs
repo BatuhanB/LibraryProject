@@ -1,8 +1,8 @@
-﻿using Library.Model.BaseEntity;
+﻿using Library.Core.Entities;
 
 namespace Library.Model.Entities
 {
-    public class Author : IEntity
+    public class Author : Entity
     {
         public string Firstname { get; set; }
         public string Lastname { get; set; }

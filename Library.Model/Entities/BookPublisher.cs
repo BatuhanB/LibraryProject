@@ -1,8 +1,8 @@
-﻿using Library.Model.BaseEntity;
+﻿using Library.Core.Entities;
 
 namespace Library.Model.Entities
 {
-    public class BookPublisher : IEntity
+    public class BookPublisher : Entity
     {
         public Guid BookId { get; set; }
         public Book Book { get; set; }

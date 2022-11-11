@@ -1,13 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Library.Model.BaseEntity
+namespace Library.Core.Entities
 {
-    public abstract class IEntity
+    public abstract class Entity : IEntity
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid Id { get; set; }
 
-        public IEntity()
+        public Entity()
         {
             Id = new Guid();
         }

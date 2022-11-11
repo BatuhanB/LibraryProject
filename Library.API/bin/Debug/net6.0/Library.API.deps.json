@@ -918,7 +918,7 @@
       },
       "Library.Core/1.0.0": {
         "dependencies": {
-          "Library.Model": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.11",
           "System.Linq.Dynamic.Core": "1.2.22"
         },
         "runtime": {
@@ -936,6 +936,7 @@
       },
       "Library.Model/1.0.0": {
         "dependencies": {
+          "Library.Core": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.11",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.7",
           "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0"

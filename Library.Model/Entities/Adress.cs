@@ -1,8 +1,8 @@
-﻿using Library.Model.BaseEntity;
+﻿using Library.Core.Entities;
 
 namespace Library.Model.Entities
 {
-    public class Adress:IEntity
+    public class Adress:Entity
     {
         public string Country { get; set; }
         public string City { get; set; }

@@ -1,11 +1,11 @@
 ﻿using System.Linq.Expressions;
 using Core.Paging;
-using Library.Model.BaseEntity;
+using Library.Core.Entities;
 using Microsoft.EntityFrameworkCore.Query;
 
 namespace Core.Repositories;
 
-public interface IRepository<T> : IQuery<T> where T : IEntity
+public interface IRepository<T> : IQuery<T> where T : Entity
 {
     T Get(Expression<Func<T, bool>> predicate);
 

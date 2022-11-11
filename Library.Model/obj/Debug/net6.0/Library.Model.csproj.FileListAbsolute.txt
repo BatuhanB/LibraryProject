@@ -10,3 +10,6 @@ C:\Users\balib\source\repos\Library\Library.Model\obj\Debug\net6.0\Library.Model
 C:\Users\balib\source\repos\Library\Library.Model\obj\Debug\net6.0\refint\Library.Model.dll
 C:\Users\balib\source\repos\Library\Library.Model\obj\Debug\net6.0\Library.Model.pdb
 C:\Users\balib\source\repos\Library\Library.Model\obj\Debug\net6.0\ref\Library.Model.dll
+C:\Users\balib\source\repos\Library\Library.Model\bin\Debug\net6.0\Library.Core.dll
+C:\Users\balib\source\repos\Library\Library.Model\bin\Debug\net6.0\Library.Core.pdb
+C:\Users\balib\source\repos\Library\Library.Model\obj\Debug\net6.0\Library.Model.csproj.CopyComplete

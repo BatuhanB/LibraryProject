@@ -1,11 +1,11 @@
 ﻿using System.Linq.Expressions;
 using Core.Paging;
-using Library.Model.BaseEntity;
+using Library.Core.Entities;
 using Microsoft.EntityFrameworkCore.Query;
 
 namespace Core.Repositories;
 
-public interface IAsyncRepository<T> : IQuery<T> where T : IEntity
+public interface IAsyncRepository<T> : IQuery<T> where T : Entity
 {
     Task<T?> GetAsync(Expression<Func<T, bool>> predicate,
         Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null);

@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
-    <Folder Include="Repositories\" />
+    <Folder Include="Repositories\Concretes\" />
     <Folder Include="Seeds\" />
   </ItemGroup>
 

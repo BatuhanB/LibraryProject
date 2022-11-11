@@ -1,8 +1,8 @@
-﻿using Library.Model.BaseEntity;
+﻿using Library.Core.Entities;
 
 namespace Library.Model.Entities
 {
-    public class Book : IEntity
+    public class Book : Entity
     {
         public string  Name { get; set; }
         public string Title { get; set; }
