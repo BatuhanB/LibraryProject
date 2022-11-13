@@ -1,4 +1,6 @@
+using Library.Core.CrossCuttingConcerns.Exceptions;
 using Library.Data.Extensions;
+using Library.Service.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDataServices(builder.Configuration);
+builder.Services.AddServiceDependencies();
 
 var app = builder.Build();
 
@@ -19,6 +22,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.ConfigureCustomExceptionMiddleware();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
