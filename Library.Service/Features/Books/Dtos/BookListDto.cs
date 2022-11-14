@@ -10,6 +10,7 @@
         public string BookImage { get; set; }
         public Guid AuthorId { get; set; }
         public Guid CategoryId { get; set; }
-        public Guid PublisherId { get; set; }
+        //todo instead of publisherId publisher list will be added  
+        //public Guid PublisherId { get; set; }
     }
 }
