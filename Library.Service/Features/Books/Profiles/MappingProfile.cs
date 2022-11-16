@@ -19,6 +19,11 @@ namespace Library.Service.Features.Books.Profiles
             CreateMap<Book,UpdatedBookDto>().ReverseMap();
             CreateMap<Book,UpdateBookCommand>().ReverseMap();
 
+            CreateMap<Book,BookGetByIdDto>().ReverseMap();
+            CreateMap<Book,BookListDto>().ForMember(x=>x.AuthorId,opt=>opt.MapFrom(x=>x.Author!.Id))
+                                         .ForMember(x=>x.CategoryId,opt=>opt.MapFrom(x=>x.Category.Id))
+                                         .ReverseMap();
+
             CreateMap<Book,DeletedBookDto>().ReverseMap();
             CreateMap<Book,DeleteBookCommand>().ReverseMap();
 

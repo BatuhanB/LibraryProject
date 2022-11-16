@@ -1,6 +1,9 @@
-﻿using Library.Service.Features.Books.Commands.Create;
+﻿using Library.Core.CrossCuttingConcerns.Requests;
+using Library.Service.Features.Books.Commands.Create;
 using Library.Service.Features.Books.Commands.Delete;
 using Library.Service.Features.Books.Commands.Update;
+using Library.Service.Features.Books.Queries.GetById;
+using Library.Service.Features.Books.Queries.GetList;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Library.API.Controllers
@@ -13,7 +16,7 @@ namespace Library.API.Controllers
         public async Task<IActionResult> Add([FromBody] CreateBookCommand command)
         {
             var result = await Mediator!.Send(command);
-            return Created("",result);
+            return Created("", result);
         }
 
         [HttpPut]
@@ -27,7 +30,22 @@ namespace Library.API.Controllers
         public async Task<IActionResult> Delete([FromRoute] DeleteBookCommand command)
         {
             var result = await Mediator!.Send(command);
-            return Ok(result);  
+            return Ok(result);
+        }
+
+        [HttpGet("{Id}")]
+        public async Task<IActionResult> GetById([FromRoute] GetByIdBookQuery query)
+        {
+            var result = await Mediator!.Send(query);
+            return Ok(result);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetList([FromQuery] PageRequest request)
+        {
+            GetListBookQuery query = new() { PageRequest = request };
+            var result = await Mediator!.Send(query);
+            return Ok(result);
         }
     }
 }

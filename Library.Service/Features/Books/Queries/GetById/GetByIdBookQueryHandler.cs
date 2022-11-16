@@ -23,9 +23,10 @@ namespace Library.Service.Features.Books.Queries.GetById
         public async Task<BookGetByIdDto> Handle(GetByIdBookQuery request, CancellationToken cancellationToken)
         {
             await _rules.BookShouldBeExistWhenRequested(request.Id);
-            //todo && x.Include(x=>x.Author) && x.Include(x=>x.BookPublishers) find solution for the inclue more than many entity
             var book = await _bookRepository.GetAsync(x=>x.Id == request.Id ,include:x=>
-                                                      x.Include(x=>x.Category));
+                                                      x.Include(x=>x.Category)
+                                                      .Include(x=>x.Author)
+                                                      .Include(x=>x.BookPublishers));
             var mappedBook = _mapper.Map<BookGetByIdDto>(book); 
             return mappedBook;
         }
